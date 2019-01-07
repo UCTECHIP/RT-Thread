@@ -39,6 +39,7 @@
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 128
 #define RT_CONSOLE_DEVICE_NAME "dusart"
+#define RT_CAN_DEVICE_NAME "bxcan0"
 
 /* RT-Thread Components */
 
@@ -71,6 +72,7 @@
 
 #define RT_USING_DEVICE_IPC
 #define RT_USING_SERIAL
+#define RT_USING_CAN
 
 /* Using USB */
 

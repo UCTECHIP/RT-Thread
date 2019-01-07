@@ -4,8 +4,8 @@ ENTRY( _start )
 
 MEMORY
 {
-  flash (rxai!w) : ORIGIN = 0x20000000, LENGTH = 128M
-  /*flash (rxai!w) : ORIGIN = 0x28000000, LENGTH = 128M*/
+  /*flash (rxai!w) : ORIGIN = 0x20000000, LENGTH = 128M*/
+  flash (rxai!w) : ORIGIN = 0x28000000, LENGTH = 128M
   ram (wxa!ri) : ORIGIN = 0x80000000, LENGTH = 32K
 }
 
@@ -139,7 +139,7 @@ SECTIONS
   {
     . = ALIGN(4);
     PROVIDE( _data = . );
-  } >ram AT>flash :ram_init
+  } >flash AT>flash :ram_init
 
   .data          :
   {
@@ -155,7 +155,7 @@ SECTIONS
     *(.srodata.cst4)
     *(.srodata.cst2)
     *(.srodata .srodata.*)
-  } >ram AT>flash :ram_init
+  } >flash AT>flash :ram_init
 
   . = ALIGN(4);
   PROVIDE( _edata = . );
@@ -171,7 +171,7 @@ SECTIONS
     *(.gnu.linkonce.b.*)
     *(COMMON)
     . = ALIGN(4);
-  } >ram AT>ram :ram
+  } >flash AT>ram :ram
 
   . = ALIGN(8);
   PROVIDE( _end = . );
