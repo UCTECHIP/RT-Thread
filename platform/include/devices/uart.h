@@ -63,8 +63,10 @@
 #define UART_IE_TRE             1<<1  //transmit/receive parity error interrupt enable
 #define UART_IE_RETR_3          1<<0  //hardware retransmission 3 times interrupt enable
 
+//frequence is 96MHz
+#define CORE_FREQ                               0x5B8D800
 //frequence is 48MHz
-#define CORE_FREQ				0x2DC6C00
+//#define CORE_FREQ				0x2DC6C00
 //frequence is 24MHz
 //#define CORE_FREQ				0x16E3600
 

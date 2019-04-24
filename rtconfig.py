@@ -10,7 +10,7 @@ if os.getenv('RTT_CC'):
 
 if  CROSS_TOOL == 'gcc':
     PLATFORM    = 'gcc'
-    EXEC_PATH   = '/home/naive/rtthread/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-centos6/bin'
+    EXEC_PATH   = '/home/yaowj/Project/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-centos6/bin'
 
 if os.getenv('RTT_EXEC_PATH'):
     EXEC_PATH = os.getenv('RTT_EXEC_PATH')
