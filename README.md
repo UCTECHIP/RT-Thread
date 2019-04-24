@@ -28,7 +28,7 @@ When it completed,the console will print the informations like this：
 
     riscv64-unknown-elf-size rtthread.elf
       text	   data	    bss	    dec	    hex	filename
-     44725	   1365	   6007	  52097	   cb81	rtthread.elf
+     24728	   1288	   4148	  30164	   75d4	rtthread.elf
     scons: done building targets.
 
 Then you can load the```rtthread.elf```into your board
