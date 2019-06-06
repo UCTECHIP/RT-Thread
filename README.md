@@ -32,3 +32,6 @@ When it completed,the console will print the informations like this：
     scons: done building targets.
 
 Then you can load the```rtthread.elf```into your board
+
+### Note 
+Uart address is 0x60000010
