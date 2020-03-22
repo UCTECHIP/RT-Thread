@@ -30,10 +30,10 @@
  *****************************************************************************/
 
 // Memory map
-#define CLINT_CTRL_ADDR _AC(0x02000000,UL)
-#define PLIC_CTRL_ADDR _AC(0x0C000000,UL)
-#define GPIO_CTRL_ADDR _AC(0x60000000,UL)
-#define UART0_CTRL_ADDR _AC(0x60000010,UL)
+#define CLINT_CTRL_ADDR _AC(0x32000000,UL)
+#define PLIC_CTRL_ADDR _AC(0x3C000000,UL)
+#define GPIO_CTRL_ADDR _AC(0x10000000,UL)
+#define UART0_CTRL_ADDR _AC(0x10000010,UL)
 
 
 
